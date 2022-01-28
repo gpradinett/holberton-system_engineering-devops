@@ -1,2 +1,2 @@
 #!/bin/bash
-chgrp hello vincent --reference=guillaume
+chgrp --reference=guillaume hello vincent
