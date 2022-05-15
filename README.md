@@ -8,7 +8,7 @@ This repository contains programs written for the System Engineering Devop track
 
 File | Description
 ---- | -----------
-[0x00-shell_basics](./main.c) | entry point of the program
+[0x00-shell_basics](./0x00-shell_basics) | entry point of the program
 [monty.h](./monty.h) | main header file
 [lists.h](./lists.h) | header file for the lists functions
 [get_func.c](./get_func.c) | function that picks the right function for the instruction
