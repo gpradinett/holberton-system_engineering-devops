@@ -1,22 +1,14 @@
-# 0x18. C - Stacks, Queues - LIFO, FIFO
+# Bash shell scripts 💻
 
 ## Description
 
-This Holberton School project is a custom ByteCode interpreter, coded in C.
-Compilation:
-```gcc -Wall -Werror -Wextra -pedantic *.c -o monty```
-Usage:
-```./monty byte_file.m```
-
-The program reads from the file "byte_file.m" that contains one instruction per line.
-It then calls the right function to modify a stack according to the instruction.
-It prints custom error messages if the instruction is wrong.
+This repository contains programs written for the System Engineering Devop track at ```holberton School```.
 
 ## Table of contents
 
 File | Description
 ---- | -----------
-[main.c](./main.c) | entry point of the program
+[0x00-shell_basics](./main.c) | entry point of the program
 [monty.h](./monty.h) | main header file
 [lists.h](./lists.h) | header file for the lists functions
 [get_func.c](./get_func.c) | function that picks the right function for the instruction
