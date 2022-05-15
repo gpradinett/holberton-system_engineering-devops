@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains programs written for the System Engineering Devop track at ```holberton School```.
+This repository contains programs written for the **System Engineering Devop** track at ```holberton School```.
 
 ## Environment
 - Language: bash for CLI (Command Line Interface)
@@ -18,4 +18,4 @@ File | Description
 [0x03-shell_variables_expansions](./0x03-shell_variables_expansions) | 
 
 ## Authors 🖊️
-- [Fernando Gonzales] (https://www.linkedin.com/in/fernando-gonzales-pradinett-2879129b/)
+- [Fernando Gonzales](https://www.linkedin.com/in/fernando-gonzales-pradinett-2879129b/)
