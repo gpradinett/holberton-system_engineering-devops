@@ -18,4 +18,4 @@ File | Description
 [0x03-shell_variables_expansions](./0x03-shell_variables_expansions) | 
 
 ## Authors 🖊️
-- Fernando Gonzales (./gpradinett)
+- [Fernando Gonzales] (https://www.linkedin.com/in/fernando-gonzales-pradinett-2879129b/)
