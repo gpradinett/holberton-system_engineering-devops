@@ -13,8 +13,9 @@ This repository contains programs written for the System Engineering Devop track
 File | Description
 ---- | -----------
 [0x00-shell_basics](./0x00-shell_basics) | 
-- What Is “The Shell”? http://linuxcommand.org/lc3_lts0010.php
-- Navigation [http://linuxcommand.org/lc3_lts0020.php]
-[0x01-shell_permissions](./0x01-shell_permissions) | main header file
-[0x02-shell_redirections](./0x02-shell_redirections) | header file for the lists functions
-[0x03-shell_variables_expansions](./0x03-shell_variables_expansions) | function that picks the right function for the instruction
+[0x01-shell_permissions](./0x01-shell_permissions) | 
+[0x02-shell_redirections](./0x02-shell_redirections) | 
+[0x03-shell_variables_expansions](./0x03-shell_variables_expansions) | 
+
+##Authors 🖊️
+- Fernando Gonzales [gpradinett]
