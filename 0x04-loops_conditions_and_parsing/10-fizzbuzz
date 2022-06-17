@@ -1,19 +1,24 @@
 #!/usr/bin/env bash
 # Fizzbuzz
 
-while ((n<=100))
+number=1
+while [[ $number -le 100 ]]
 do
-	if ((n%3 == 0 && n%5 == 0))
-	then
-		echo "FizzBuzz"
-	elif ((n%3 == 0))
+	if [ $((number % 3)) == 0 ] && [ $((number % 5)) != 0 ]
 	then
 		echo "Fizz"
-	elif ((n%5 == 0))
+
+	elif [ $((number % 5)) == 0 ] && [ $((number % 3)) != 0 ]
 	then
 		echo "Buzz"
+
+	elif [ $((number % 3)) == 0 ] && [ $((number % 5)) == 0 ]
+	then
+		echo "FizzBuzz"
+
 	else
-		echo "$n"
+		echo $number
+
 	fi
-	((n++))
+	((number++))
 done
