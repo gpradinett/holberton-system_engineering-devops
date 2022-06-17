@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Bash script showing the best school 10 times
+
+# Initialize counter
+
+i=1
+
+until [ $i -gt 10 ]
+do
+	# Print: Best School
+	echo "Best School"
+	((i++))
+done
