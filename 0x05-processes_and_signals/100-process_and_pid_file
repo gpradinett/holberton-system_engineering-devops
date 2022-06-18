@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Bash script that create a file with the PID number inside and then remove it if SIGQUIT or SIGTERM
+
+sudo touch /var/run/myscript.pid # Se crea el archivo con touch
+sudo chmod 777 /var/run/myscript.pid # Se le da todos los permisos para poder escribir en el archivo
+echo $$ > /var/run/myscript.pid # Con $$ obtengo el PID number y con > (redirection) redirecciono el output para el
+# archivo recien creado.
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+	trap 'echo "I hate the kill command"; sudo rm /var/run/myscript.pid; exit' SIGTERM
+	trap 'echo "Y U no love me?!"' SIGINT
+	trap 'sudo rm /var/run/myscript.pid; exit' SIGQUIT
+done
