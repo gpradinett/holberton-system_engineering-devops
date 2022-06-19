@@ -41,29 +41,19 @@ man or help:
 For those who want to know more and learn about all signals, check out this [article](https://www.computerhope.com/unix/signals.htm).
 
 ## [**0-what-is-my-pid**]()
-
-| **File** | **Description** | 
-| ------ | ------ |
-| [**0-what-is-my-pid**]() | Write a Bash script that displays its own PID.
-
 ```
-sylvain@ubuntu$ ./0-what-is-my-pid
-4120
-sylvain@ubuntu$
-```
-
-```
-0. What is my PID
+What is my PID
 ```
 Write a Bash script that displays its own PID.
 ```
-sylvain@ubuntu$ ./0-what-is-my-pid
+gpradinett@ubuntu$ ./0-what-is-my-pid
 4120
 sylva
 ```
 
+## [**1-list_your_processes**]()
 ```
-1. List your processes
+List your processes
 ```
 Write a Bash script that displays a list of currently running processes.
 
@@ -73,7 +63,7 @@ Requirements:
 - Show process hierarchy
 
 ```
-sylvain@ubuntu$ ./1-list_your_processes | head -50
+gpradinett@ubuntu$ ./1-list_your_processes | head -50
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root         2  0.0  0.0      0     0 ?        S    Feb13   0:00 [kthreadd]
 root         3  0.0  0.0      0     0 ?        S    Feb13   0:00  \_ [ksoftirqd/0]
@@ -124,11 +114,12 @@ root       373  0.0  0.0  19472   408 ?        S    Feb13   0:00 upstart-udev-br
 root       378  0.0  0.2  49904  1088 ?        Ss   Feb13   0:00 /lib/systemd/systemd-udevd --daemon
 root       518  0.0  0.1  23416   644 ?        Ss   Feb13   0:00 rpcbind
 statd      547  0.0  0.1  21536   852 ?        Ss   Feb13   0:00 rpc.statd -L
-sylvain@ubuntu$
+gpradinett@ubuntu$
 ```
 
+## [**2-show_your_bash_pid**]()
 ```
-2. Show your Bash PID
+Show your Bash PID
 ```
 Using your previous exercise command, write a Bash script that displays lines containing the bash word, thus allowing you to easily get the PID of your Bash process.
 
@@ -138,11 +129,11 @@ Requirements:
 - The third line of your script must be # shellcheck disable=SC2009 (for more info about ignoring shellcheck error here)
 
 ```
-sylvain@ubuntu$ sylvain@ubuntu$ ./2-show_your_bash_pid
-sylvain   4404  0.0  0.7  21432  4000 pts/0    Ss   03:32   0:00          \_ -bash
-sylvain   4477  0.0  0.2  11120  1352 pts/0    S+   03:40   0:00              \_ bash ./2-show_your_bash_PID
-sylvain   4479  0.0  0.1  10460   912 pts/0    S+   03:40   0:00                  \_ grep bash
-sylvain@ubuntu$ 
+gpradinett@ubuntu$ gpradinett@ubuntu$ ./2-show_your_bash_pid
+gpradinett   4404  0.0  0.7  21432  4000 pts/0    Ss   03:32   0:00          \_ -bash
+gpradinett   4477  0.0  0.2  11120  1352 pts/0    S+   03:40   0:00              \_ bash ./2-show_your_bash_PID
+gpradinett   4479  0.0  0.1  10460   912 pts/0    S+   03:40   0:00                  \_ grep bash
+gpradinett@ubuntu$ 
 ```
 <sub>Here we can see that my Bash PID is 4404.
 
@@ -156,13 +147,13 @@ Requirements:
 - You cannot use `ps`
 
 ```
-sylvain@ubuntu$ ./3-show_your_bash_pid_made_easy
+gpradinett@ubuntu$ ./3-show_your_bash_pid_made_easy
 4404 bash
 4555 bash
-sylvain@ubuntu$ ./3-show_your_bash_pid_made_easy
+gpradinett@ubuntu$ ./3-show_your_bash_pid_made_easy
 4404 bash
 4557 bash
-sylvain@ubuntu$ 
+gpradinett@ubuntu$ 
 ```
 <sub>Here we can see that:
 - <sub>For the first iteration: `bash` PID is 4404 and that the `3-show_your_bash_pid_made_easy` script PID is `4555`
@@ -170,21 +161,21 @@ sylvain@ubuntu$
 
 ## [**4-to_infinity_and_beyond**]()
 ```
-4. To infinity and beyond
+To infinity and beyond
 ```
 Write a Bash script that displays _`To infinity and beyond indefinitely`_.
 
 Requirements:
 - In between each iteration of the loop, add a `sleep 2`
 ```
-sylvain@ubuntu$ ./4-to_infinity_and_beyond
+gpradinett@ubuntu$ ./4-to_infinity_and_beyond
 To infinity and beyond
 To infinity and beyond
 To infinity and beyond
 To infinity and beyond
 To infinity and beyond
 ^C
-sylvain@ubuntu$ 
+gpradinett@ubuntu$ 
 ```
 <sub>Note that I `ctrl+c` (killed) the Bash script in the example.
 
@@ -202,7 +193,7 @@ Requirements:
 
 Terminal #0
 ```
-sylvain@ubuntu$ ./4-to_infinity_and_beyond
+gpradinett@ubuntu$ ./4-to_infinity_and_beyond
 To infinity and beyond
 To infinity and beyond
 To infinity and beyond
@@ -218,18 +209,18 @@ To infinity and beyond
 To infinity and beyond
 To infinity and beyond
 Terminated
-sylvain@ubuntu$ 
+gpradinett@ubuntu$ 
 ```
 Terminal #1
 ```
-sylvain@ubuntu$ ./5-dont_stop_me_now 
-sylvain@ubuntu$ 
+gpradinett@ubuntu$ ./5-dont_stop_me_now 
+gpradinett@ubuntu$ 
 ```
 <sub>I opened 2 terminals in this example, started by running my `4-to_infinity_and_beyond` Bash script in terminal #0 and then moved on terminal #1 to run `5-dont_stop_me_now`. We can then see in terminal #0 that my process has been terminated.
 
 ## [**6-stop_me_if_you_can**]()
 ```
-6. Stop me if you can
+Stop me if you can
 ```
 Write a Bash script that stops `4-to_infinity_and_beyond` process.
 
@@ -239,7 +230,7 @@ Requirements:
 
 Terminal #0
 ```
-sylvain@ubuntu$ ./4-to_infinity_and_beyond
+gpradinett@ubuntu$ ./4-to_infinity_and_beyond
 To infinity and beyond
 To infinity and beyond
 To infinity and beyond
@@ -252,18 +243,18 @@ To infinity and beyond
 To infinity and beyond
 To infinity and beyond
 Terminated
-sylvain@ubuntu$ 
+gpradinett@ubuntu$ 
 ```
 Terminal #1
 ```
-sylvain@ubuntu$ ./6-stop_me_if_you_can
-sylvain@ubuntu$ 
+gpradinett@ubuntu$ ./6-stop_me_if_you_can
+gpradinett@ubuntu$ 
 ```
 <sub>I opened 2 terminals in this example, started by running my `4-to_infinity_and_beyond `Bash script in terminal #0 and then moved on terminal #1 to run `6-stop_me_if_you_can`. We can then see in terminal #0 that my process has been terminated.
 
 ## [**7-highlander**]()
 ```
-7. Highlander
+Highlander
 ```
 Write a Bash script that displays:
 - `To infinity and beyond` indefinitely
@@ -274,7 +265,7 @@ Make a copy of your `6-stop_me_if_you_can` script, name it `67-stop_me_if_you_ca
 
 Terminal #0
 ```
-sylvain@ubuntu$ ./7-highlander
+gpradinett@ubuntu$ ./7-highlander
 To infinity and beyond
 To infinity and beyond
 I am invincible!!!
@@ -286,37 +277,37 @@ To infinity and beyond
 I am invincible!!!
 To infinity and beyond
 ^C
-sylvain@ubuntu$ 
+gpradinett@ubuntu$ 
 ```
 Terminal #1
 ```
-sylvain@ubuntu$ ./67-stop_me_if_you_can 
-sylvain@ubuntu$ ./67-stop_me_if_you_can
-sylvain@ubuntu$ ./67-stop_me_if_you_can
-sylvain@ubuntu$ 
+gpradinett@ubuntu$ ./67-stop_me_if_you_can 
+gpradinett@ubuntu$ ./67-stop_me_if_you_can
+gpradinett@ubuntu$ ./67-stop_me_if_you_can
+gpradinett@ubuntu$ 
 ```
 <sub>I started `7-highlander` in Terminal #0 and then run `67-stop_me_if_you_can` in terminal #1, for every iteration we can see `I am invincible!!!` appearing in terminal #0.
 
 ## [**8-beheaded_process**]()
 ```
-8. Beheaded process
+Beheaded process
 ```
 Write a Bash script that kills the process `7-highlander`.
 
 Terminal #0
 ```
-sylvain@ubuntu$ ./7-highlander 
+gpradinett@ubuntu$ ./7-highlander 
 To infinity and beyond
 To infinity and beyond
 To infinity and beyond
 To infinity and beyond
 Killed
-sylvain@ubuntu$ 
+gpradinett@ubuntu$ 
 ```
 Terminal #1
 ```
-sylvain@ubuntu$ ./8-beheaded_process
-sylvain@ubuntu$ 
+gpradinett@ubuntu$ ./8-beheaded_process
+gpradinett@ubuntu$ 
 ```
 <sub>I started `7-highlander` in Terminal #0 and then run `8-beheaded_process` in terminal #1 and we can see that the `7-highlander` has been killed.
 
@@ -333,7 +324,7 @@ Write a Bash script that:
 - Deletes the file /var/run/myscript.pid and terminates itself when receiving a SIGQUIT or SIGTERM signal
 ![](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/9/d8ecfe9109334898b9540ffd20cf64d1c06f0c09.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220619%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220619T042452Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=3a3f7a9f974db69a2e65e254405ad3af6fe5e14db9c1e1b1797a97a1e8db9e0a)
 ```
-sylvain@ubuntu$ sudo ./100-process_and_pid_file
+gpradinett@ubuntu$ sudo ./100-process_and_pid_file
 To infinity and beyond
 To infinity and beyond
 ^CY U no love me?!
@@ -342,7 +333,7 @@ To infinity and beyond
 
 Terminal #0
 ```
-sylvain@ubuntu$ sudo ./100-process_and_pid_file
+gpradinett@ubuntu$ sudo ./100-process_and_pid_file
 To infinity and beyond
 To infinity and beyond
 To infinity and beyond
@@ -355,12 +346,12 @@ To infinity and beyond
 To infinity and beyond
 To infinity and beyond
 I hate the kill command
-sylvain@ubuntu$ 
+gpradinett@ubuntu$ 
 ```
 Terminal #1
 ```
-sylvain@ubuntu$ sudo pkill -f 100-process_and_pid_file
-sylvain@ubuntu$ 
+gpradinett@ubuntu$ sudo pkill -f 100-process_and_pid_file
+gpradinett@ubuntu$ 
 ```
 <sub>Starting 100-process_and_pid_file in the terminal #0 and then killing it in the terminal #1.
 
